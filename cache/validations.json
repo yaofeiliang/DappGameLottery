@@ -1,0 +1,2670 @@
+{
+  "version": "3.1",
+  "log": [
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "0b3819d33068cb53dc37a4d0148b57df44d324a7dcf95210c56910b2937f7349",
+          "withoutMetadata": "69f9d4d864462ffbd62ee8bc478b9dc66792affa2c3b33fe3d233b3aeff26771",
+          "linkedWithoutMetadata": "69f9d4d864462ffbd62ee8bc478b9dc66792affa2c3b33fe3d233b3aeff26771"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "winningLotteryNumber",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:10"
+            },
+            {
+              "contract": "Lottery",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/Lottery.sol:12"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)97_storage)",
+              "src": "contracts/Lottery.sol:19"
+            },
+            {
+              "contract": "Lottery",
+              "label": "addressToUserIds",
+              "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+              "src": "contracts/Lottery.sol:21"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)97_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)97_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            },
+            "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+              "label": "mapping(address => uint256[])"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "939740c304579f507fe00d7b467ed68fb2d25865ac0f42a75cdb3438df571e71",
+          "withoutMetadata": "db83a0d944b0716b46219642f209661a29a6453873034299b5596673a1c36694",
+          "linkedWithoutMetadata": "db83a0d944b0716b46219642f209661a29a6453873034299b5596673a1c36694"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "winningLotteryNumber",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts/Lottery.sol:7"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/Lottery.sol:11"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)97_storage)",
+              "src": "contracts/Lottery.sol:18"
+            },
+            {
+              "contract": "Lottery",
+              "label": "addressToUserIds",
+              "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+              "src": "contracts/Lottery.sol:20"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)97_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)97_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            },
+            "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+              "label": "mapping(address => uint256[])"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "96be7122e09e6a550102f462f1fd9b6ace1dd5a1f3cb87da0041f5d6e6577047",
+          "withoutMetadata": "a222ff4a42ad16830aab3dc35cd9111d52398b72b3ca4755396d3a1f93faba10",
+          "linkedWithoutMetadata": "a222ff4a42ad16830aab3dc35cd9111d52398b72b3ca4755396d3a1f93faba10"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "winningLotteryNumber",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts/Lottery.sol:7"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/Lottery.sol:11"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)97_storage)",
+              "src": "contracts/Lottery.sol:18"
+            },
+            {
+              "contract": "Lottery",
+              "label": "addressToUserIds",
+              "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+              "src": "contracts/Lottery.sol:20"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)97_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)97_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            },
+            "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+              "label": "mapping(address => uint256[])"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "f1c4a0586fdc6e4dbeb15b53d1490f13f74c672d9384c39dfa230a4ca662bb92",
+          "withoutMetadata": "b6d3cb184be6f3dd4da153e674ff162b2977f4db37cbedf327984ce8fee1f847",
+          "linkedWithoutMetadata": "b6d3cb184be6f3dd4da153e674ff162b2977f4db37cbedf327984ce8fee1f847"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "winningLotteryNumber",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts/Lottery.sol:7"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/Lottery.sol:11"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)97_storage)",
+              "src": "contracts/Lottery.sol:18"
+            },
+            {
+              "contract": "Lottery",
+              "label": "addressToUserIds",
+              "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+              "src": "contracts/Lottery.sol:20"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)97_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)97_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            },
+            "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+              "label": "mapping(address => uint256[])"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "adc5b003973f78e2fc04e3dcb7333648ef477c288e64f32b2215a2e442497fb5",
+          "withoutMetadata": "15cecbbf7cb7fe0e93341e4e1b488d5239964a72b61ae5dc60620d1e7e2ac99b",
+          "linkedWithoutMetadata": "15cecbbf7cb7fe0e93341e4e1b488d5239964a72b61ae5dc60620d1e7e2ac99b"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)",
+              "src": "contracts/Lottery.sol:17"
+            },
+            {
+              "contract": "Lottery",
+              "label": "addressToUserIds",
+              "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+              "src": "contracts/Lottery.sol:18"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)92_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            },
+            "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+              "label": "mapping(address => uint256[])"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "7a694a2dceffd5c537d80335301ab360b518382153bd9e797edd3907e00a72a7",
+          "withoutMetadata": "639396fdfca52b7f502af08ee30f7bbe1313ab679bc55e02fd8e55962693427c",
+          "linkedWithoutMetadata": "639396fdfca52b7f502af08ee30f7bbe1313ab679bc55e02fd8e55962693427c"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)",
+              "src": "contracts/Lottery.sol:17"
+            },
+            {
+              "contract": "Lottery",
+              "label": "addressToUserIds",
+              "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+              "src": "contracts/Lottery.sol:18"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)92_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            },
+            "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+              "label": "mapping(address => uint256[])"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "b1afe20203a137c4ddd76be57d82286efa3d523cc4d04fbad8871944ddad1217",
+          "withoutMetadata": "639396fdfca52b7f502af08ee30f7bbe1313ab679bc55e02fd8e55962693427c",
+          "linkedWithoutMetadata": "639396fdfca52b7f502af08ee30f7bbe1313ab679bc55e02fd8e55962693427c"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)",
+              "src": "contracts/Lottery.sol:17"
+            },
+            {
+              "contract": "Lottery",
+              "label": "addressToUserIds",
+              "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+              "src": "contracts/Lottery.sol:18"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)92_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            },
+            "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+              "label": "mapping(address => uint256[])"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "83c976486a97b596181a196de0fcad81cb7c3edc40bb756ba49ea4282f05dd64",
+          "withoutMetadata": "37ed3c9eaaca10d5f1ac74e4ca8b00a701c97c64ce3d5c9b459bd8bd0c501d0d",
+          "linkedWithoutMetadata": "37ed3c9eaaca10d5f1ac74e4ca8b00a701c97c64ce3d5c9b459bd8bd0c501d0d"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)",
+              "src": "contracts/Lottery.sol:17"
+            },
+            {
+              "contract": "Lottery",
+              "label": "users",
+              "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+              "src": "contracts/Lottery.sol:18"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)92_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            },
+            "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+              "label": "mapping(address => uint256[])"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "baafdcc9fcfc1b0a4dd2c95a8f94fc35695bddc1ce743efc55bcc611c85ceea1",
+          "withoutMetadata": "4553551248889928ddaf6d8b17fb8c1354bbb823d76b031f90c7e0f22090caae",
+          "linkedWithoutMetadata": "4553551248889928ddaf6d8b17fb8c1354bbb823d76b031f90c7e0f22090caae"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)",
+              "src": "contracts/Lottery.sol:16"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)92_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "1eaa38c95e965a0e4ce417fa077fc18b745a4aeaa68f100595d9e61185233367",
+          "withoutMetadata": "47fc2c06bc1100cf097d661715b4fdeb76475f103adf04393f9af02c44fdc91c",
+          "linkedWithoutMetadata": "47fc2c06bc1100cf097d661715b4fdeb76475f103adf04393f9af02c44fdc91c"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)93_storage)",
+              "src": "contracts/Lottery.sol:16"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)93_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)93_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)4_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint8)4_storage": {
+              "label": "uint8[4]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "e007dbbe3781fdf60029b7d671cfa9907a91c023acede393a9861273b869206d",
+          "withoutMetadata": "0fc0b96cf2410bed1e9ea2c2eca25a55a6c5f3de2056ca077d03b4c266b998f7",
+          "linkedWithoutMetadata": "0fc0b96cf2410bed1e9ea2c2eca25a55a6c5f3de2056ca077d03b4c266b998f7"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)",
+              "src": "contracts/Lottery.sol:16"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)92_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "b0c56bbe42b60cbf8db71609e5abe18f27d21000cbb290c271f4fcd4442fd314",
+          "withoutMetadata": "5e4505eccf85eb9cd8707f251105a5ef9948adaff91baf2d5bc5aea7b8daa163",
+          "linkedWithoutMetadata": "5e4505eccf85eb9cd8707f251105a5ef9948adaff91baf2d5bc5aea7b8daa163"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)",
+              "src": "contracts/Lottery.sol:16"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)92_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "e007dbbe3781fdf60029b7d671cfa9907a91c023acede393a9861273b869206d",
+          "withoutMetadata": "0fc0b96cf2410bed1e9ea2c2eca25a55a6c5f3de2056ca077d03b4c266b998f7",
+          "linkedWithoutMetadata": "0fc0b96cf2410bed1e9ea2c2eca25a55a6c5f3de2056ca077d03b4c266b998f7"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)",
+              "src": "contracts/Lottery.sol:16"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)92_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "aa9033a48f744e686e204baa21630a88bfc7ba0d4ed6bcca294b4d9374cd75d0",
+          "withoutMetadata": "5e4505eccf85eb9cd8707f251105a5ef9948adaff91baf2d5bc5aea7b8daa163",
+          "linkedWithoutMetadata": "5e4505eccf85eb9cd8707f251105a5ef9948adaff91baf2d5bc5aea7b8daa163"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)",
+              "src": "contracts/Lottery.sol:16"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)92_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "feaffe8d6e459ee3809b47e7f8189c493f07a60cc37f29bc88026b4364d0f27c",
+          "withoutMetadata": "b4b55869738e52c03e3c977e328509a215c76dff35182166ef823d4673defe1e",
+          "linkedWithoutMetadata": "b4b55869738e52c03e3c977e328509a215c76dff35182166ef823d4673defe1e"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)",
+              "src": "contracts/Lottery.sol:16"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)92_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "28cb4bf65cd1a4107c436777117f9f2e97f6b29c199ab1b75e42cf32c6247325",
+          "withoutMetadata": "8e787cd51ed9b3627721ca81aa092729701936827f0ae25c7dcc26c53ed5a7b2",
+          "linkedWithoutMetadata": "8e787cd51ed9b3627721ca81aa092729701936827f0ae25c7dcc26c53ed5a7b2"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)",
+              "src": "contracts/Lottery.sol:16"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)92_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "e778839ed108652e3e3d935760c5d6bb6318effdc95e5bf26964a0c694b8cade",
+          "withoutMetadata": "8e824dd84003bc53385ac80ab342f964eab91ea9501dc8b53dc50dd7b590f811",
+          "linkedWithoutMetadata": "8e824dd84003bc53385ac80ab342f964eab91ea9501dc8b53dc50dd7b590f811"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)",
+              "src": "contracts/Lottery.sol:16"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)92_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "1e1d42c92fd4b2929a96cbc936ae49ae969071d50a0cb8afa4f35ea97dddd143",
+          "withoutMetadata": "8e824dd84003bc53385ac80ab342f964eab91ea9501dc8b53dc50dd7b590f811",
+          "linkedWithoutMetadata": "8e824dd84003bc53385ac80ab342f964eab91ea9501dc8b53dc50dd7b590f811"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "lotteryBet",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:8"
+            },
+            {
+              "contract": "Lottery",
+              "label": "lastUserId",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:9"
+            },
+            {
+              "contract": "Lottery",
+              "label": "idToLotteryPlayers",
+              "type": "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)",
+              "src": "contracts/Lottery.sol:16"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(LotteryPlayers)92_storage)": {
+              "label": "mapping(uint256 => struct Lottery.LotteryPlayers)"
+            },
+            "t_struct(LotteryPlayers)92_storage": {
+              "label": "struct Lottery.LotteryPlayers",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "userAddress",
+                  "type": "t_address"
+                },
+                {
+                  "label": "lotteryNumber",
+                  "type": "t_array(t_uint8)dyn_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint8)dyn_storage": {
+              "label": "uint8[]"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Initializable": {
+        "version": {
+          "withMetadata": "efe27b188f670735bc6fb0c4a26082cd2466b0f992a4fe5f6c186bd981504594",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Greeter": {
+        "version": {
+          "withMetadata": "c1972135605b7737f26d1cae0c3fd0c3e40c2ba6b4e1a3809177a93f36df6fb2",
+          "withoutMetadata": "c1972135605b7737f26d1cae0c3fd0c3e40c2ba6b4e1a3809177a93f36df6fb2",
+          "linkedWithoutMetadata": "c1972135605b7737f26d1cae0c3fd0c3e40c2ba6b4e1a3809177a93f36df6fb2"
+        },
+        "inherit": [],
+        "libraries": [
+          "console"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Greeter",
+            "src": "contracts/Greeter.sol:10"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Greeter",
+              "label": "greeting",
+              "type": "t_string_storage",
+              "src": "contracts/Greeter.sol:8"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Lottery": {
+        "version": {
+          "withMetadata": "48ffb96645c52b48f06b64b96dc84025d00526009a0cb180a0880f5ec16d7cdc",
+          "withoutMetadata": "1ac7d9987f30e728b4a8824fa84f7250b9b49f1bf112de46f9529a10d453f307",
+          "linkedWithoutMetadata": "1ac7d9987f30e728b4a8824fa84f7250b9b49f1bf112de46f9529a10d453f307"
+        },
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Lottery",
+              "label": "x",
+              "type": "t_uint256",
+              "src": "contracts/Lottery.sol:6"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "version": {
+          "withMetadata": "bc1d0a77873d2b67f006baf87c710031dffdf705c19e353ae82d093385f29016",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    }
+  ]
+}
